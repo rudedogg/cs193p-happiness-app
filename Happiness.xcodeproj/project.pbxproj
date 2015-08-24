@@ -10,7 +10,6 @@
 		0015D84E1B8A4F7700D94F6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D84D1B8A4F7700D94F6E /* AppDelegate.swift */; };
 		0015D8531B8A4F7700D94F6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0015D8511B8A4F7700D94F6E /* Main.storyboard */; };
 		0015D8551B8A4F7700D94F6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0015D8541B8A4F7700D94F6E /* Assets.xcassets */; };
-		0015D8581B8A4F7700D94F6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0015D8561B8A4F7700D94F6E /* LaunchScreen.storyboard */; };
 		0015D8631B8A4F7700D94F6E /* HappinessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D8621B8A4F7700D94F6E /* HappinessTests.swift */; };
 		0015D86E1B8A4F7700D94F6E /* HappinessUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D86D1B8A4F7700D94F6E /* HappinessUITests.swift */; };
 		0015D87C1B8A505000D94F6E /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0015D87B1B8A505000D94F6E /* HappinessViewController.swift */; };
@@ -39,7 +38,6 @@
 		0015D84D1B8A4F7700D94F6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0015D8521B8A4F7700D94F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0015D8541B8A4F7700D94F6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0015D8571B8A4F7700D94F6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0015D8591B8A4F7700D94F6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0015D85E1B8A4F7700D94F6E /* HappinessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HappinessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0015D8621B8A4F7700D94F6E /* HappinessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HappinessTests.swift; sourceTree = "<group>"; };
@@ -104,7 +102,6 @@
 				0015D8511B8A4F7700D94F6E /* Main.storyboard */,
 				0015D87D1B8A520600D94F6E /* FaceView.swift */,
 				0015D8541B8A4F7700D94F6E /* Assets.xcassets */,
-				0015D8561B8A4F7700D94F6E /* LaunchScreen.storyboard */,
 				0015D8591B8A4F7700D94F6E /* Info.plist */,
 			);
 			path = Happiness;
@@ -231,7 +228,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0015D8581B8A4F7700D94F6E /* LaunchScreen.storyboard in Resources */,
 				0015D8551B8A4F7700D94F6E /* Assets.xcassets in Resources */,
 				0015D8531B8A4F7700D94F6E /* Main.storyboard in Resources */,
 			);
@@ -302,14 +298,6 @@
 				0015D8521B8A4F7700D94F6E /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0015D8561B8A4F7700D94F6E /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0015D8571B8A4F7700D94F6E /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -401,9 +389,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Happiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.Happiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -412,9 +402,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Happiness/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.Happiness;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -423,6 +415,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HappinessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.HappinessTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -435,6 +428,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = HappinessTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.HappinessTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = HappinessUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.HappinessUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -458,6 +453,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = HappinessUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.appliest.HappinessUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -485,6 +481,7 @@
 				0015D8741B8A4F7700D94F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0015D8751B8A4F7700D94F6E /* Build configuration list for PBXNativeTarget "HappinessTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +490,7 @@
 				0015D8771B8A4F7700D94F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0015D8781B8A4F7700D94F6E /* Build configuration list for PBXNativeTarget "HappinessUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +499,7 @@
 				0015D87A1B8A4F7700D94F6E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
